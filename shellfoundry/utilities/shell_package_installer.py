@@ -30,5 +30,5 @@ class ShellPackageInstaller(object):
             click.echo('Updating shell {0}'.format(package_full_path))
             client.update_shell(package_full_path)
         except ShellNotFoundException:
-            click.echo('Shell not found, adding shell {0}'.format(package_full_path))
+            click.echo('Adding shell {0}'.format(package_full_path))
             client.add_shell(package_full_path)
